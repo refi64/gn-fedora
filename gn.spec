@@ -2,7 +2,7 @@
 
 Name:    gn
 Version: 1634
-Release: 1%{?dist}.%{commit}
+Release: 2%{?dist}.%{commit}
 Summary: A meta build system
 
 License: BSD-3-Clause
