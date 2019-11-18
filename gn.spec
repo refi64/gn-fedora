@@ -11,8 +11,6 @@ BuildRequires: gcc-c++
 BuildRequires: ninja-build
 BuildRequires: python3
 
-Requires: %{name}-libs%{?_isa} = %{version}-%{release}
-
 Source0: https://gn.googlesource.com/gn/+archive/%{commit}.tar.gz#/gn.tar.gz
 Patch0: 0001-Use-Python-3-in-the-unit-tests.patch
 
