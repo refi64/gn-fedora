@@ -1,16 +1,16 @@
-From 63c3b902c81e80a846424227a46d0c6e46942479 Mon Sep 17 00:00:00 2001
+From d964e275fa985f4620d6612cc2125fe47cf163b7 Mon Sep 17 00:00:00 2001
 From: Ryan Gonzalez <rymg19@gmail.com>
-Date: Thu, 7 Nov 2019 17:07:15 -0600
-Subject: [PATCH] Use Python 3 in the unit tests
+Date: Sat, 21 Mar 2020 22:25:18 -0500
+Subject: [PATCH 1/2] Use Python 3 in the unit tests
 
 ---
- tools/gn/exec_process_unittest.cc | 2 +-
+ src/gn/exec_process_unittest.cc | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/tools/gn/exec_process_unittest.cc b/tools/gn/exec_process_unittest.cc
-index 993f2d73..43db9d51 100644
---- a/tools/gn/exec_process_unittest.cc
-+++ b/tools/gn/exec_process_unittest.cc
+diff --git a/src/gn/exec_process_unittest.cc b/src/gn/exec_process_unittest.cc
+index 5ca0605f..599892d3 100644
+--- a/src/gn/exec_process_unittest.cc
++++ b/src/gn/exec_process_unittest.cc
 @@ -33,7 +33,7 @@ bool ExecPython(const std::string& command,
    args.push_back(L"-c");
    args.push_back(base::UTF8ToUTF16(command));
@@ -21,5 +21,5 @@ index 993f2d73..43db9d51 100644
    args.push_back(command);
  #endif
 -- 
-2.21.0
+2.25.1
 

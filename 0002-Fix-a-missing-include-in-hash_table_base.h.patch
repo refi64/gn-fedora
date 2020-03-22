@@ -1,0 +1,24 @@
+From 5d1459fd538d6bce4d1ac1c7c3965efb09e34d7b Mon Sep 17 00:00:00 2001
+From: Ryan Gonzalez <rymg19@gmail.com>
+Date: Sat, 21 Mar 2020 22:43:02 -0500
+Subject: [PATCH 2/2] Fix a missing include in hash_table_base.h
+
+---
+ src/gn/hash_table_base.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/gn/hash_table_base.h b/src/gn/hash_table_base.h
+index 9e43733b..22fcaea7 100644
+--- a/src/gn/hash_table_base.h
++++ b/src/gn/hash_table_base.h
+@@ -9,6 +9,7 @@
+ 
+ #include <stdlib.h>
+ #include <type_traits>
++#include <utility>
+ 
+ // IMPORTANT DISCLAIMER:
+ //
+-- 
+2.25.1
+
