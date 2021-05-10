@@ -1,7 +1,7 @@
-%define commit 9499562d
+%define commit 39a87c0b
 
 Name:    gn
-Version: 1726
+Version: 1910
 Release: 1%{?dist}.%{commit}
 Summary: A meta build system
 
@@ -12,16 +12,12 @@ BuildRequires: ninja-build
 BuildRequires: python3
 
 Source0: https://gn.googlesource.com/gn/+archive/%{commit}.tar.gz#/gn.tar.gz
-Patch0: 0001-Use-Python-3-in-the-unit-tests.patch
-Patch1: 0002-Fix-a-missing-include-in-hash_table_base.h.patch
 
 %description
 GN is a meta-build system that generates build files for Ninja.
 
 %prep
 %setup -q -c -n gn
-%patch0 -p1
-%patch1 -p1
 
 %build
 
