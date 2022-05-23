@@ -1,7 +1,7 @@
-%define commit 39a87c0b
+%define commit 7e052763
 
 Name:    gn
-Version: 1910
+Version: 2038
 Release: 1%{?dist}.%{commit}
 Summary: A meta build system
 
